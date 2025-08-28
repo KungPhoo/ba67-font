@@ -34,6 +34,7 @@ Commodore version:
   mark to distinguish from accents. ' ´ `
 - b,d,f,h,i,j,k,l,t tough the top,
   as uppercase letters do.
+- right-aligned pound sign as M and W do.
 
 ## Test
 Take a look at this text with BA67 loaded:
