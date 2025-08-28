@@ -22,36 +22,34 @@ menu item `Element\Autotrace`.
 Finally, export it with `File/Generate Fonts...`.
 
 ### Script
-GPT said this script might work:
+Use this script with fontforge's own python
+version.
 ```
 import fontforge
 
 font = fontforge.font()
 
 # Import all bitmaps into background
-font.importBitmaps("myfont.bdf")
+font.importBitmaps("./BA67.bdf", True)
+
+# Read a preference
+print(fontforge.getPrefs("PreferPotrace"))
+
+# Change a preference
+fontforge.setPrefs("PreferPotrace", True)
 
 # Auto-trace each glyph
 for g in font.glyphs():
+    print(g.glyphname)
     g.autoTrace()
 
 # Save as TTF
-font.generate("myfont.ttf")
-```
-I didn't test it.
-
-I think it should be a .ff file
-`fontforge -lang=ff -c "path/to/script"`
-```
-Import("BA67.bnf", true)
-SelectAll()
-AutoTrace()
-Generate("BA67.ttf")
-Quit(0)
+font.generate("./BA67.ttf")
+font.generate("./BA67.woff2")
 ```
 
 
 ## License
-
+to be set, yet. Will be as liberate as possible.
 
 
