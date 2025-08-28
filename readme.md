@@ -1,10 +1,13 @@
-# BA67-Font
+ï»¿# BA67-Font
 ## About
 The BA67 font is a merge of the original CBM
 fonts from the Commodore C64/C128,
 characters from [Char8.js](https://www.masswerk.at/char8/),
 and lots of hand-drawn emojis. It should support
 all existing Unicode characters (as of 2025-08).
+
+Here's an example what it might look like:
+![image](example.png)
 
 ## Edit
 In order to edit the font, best use the html editor
@@ -28,28 +31,42 @@ Commodore version:
 - '<' and '>' less tall to better distinguish from '(' and ')'.
 - '~' was thickened to match the double-pixel style.
 - Apostrophe was straightened to match the quotation
-  mark to distinguish from accents. ' ´ `
+  mark to distinguish from accents. ' Â´ `
 - b,d,f,h,i,j,k,l,t tough the top,
   as uppercase letters do.
 
 ## Test
-0123456789°!.,:;§$%&=+-*/^
+Take a look at this text with BA67 loaded:
+```
+COMMODORE BASIC V7.0 122365 BYTES FREE
+   (C)1986 COMMODORE ELECTRONICS, LTD.
+         (C)1977 MICROSOFT CORP.
+           ALL RIGHTS RESERVED
+
+READY.
+
+Emoji: ğŸŒ´ â™¥ ğŸ”’ ğŸ´ ğŸ•Š
+
+0123456789Â°!.,:;Â§$%&=+-*/^
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 abcdefghijklmnopqrstuvwxyz
-<>(){}[] ""''´´``
+<>(){}[] ""''Â´Â´``
 
 p  <- these two should touch. 
 L     Your editor might add a one pixel line.
 
+Look-alike glpyhs:
 Iil|
-0Oo°
-ÖoöÜüäÄß
+0OoÂ°
+OÃ–Ã¶o UÃœÃ¼u AÃ„Ã¤a bÃŸB
 9q
 3B8
 ?ZzSs
-C(<, c<>)
-```
-template<T> class duh {
+
+C(<  c<>)
+
+C++ example:
+template class<T> class duh {
     void foo() {
         char bar[4] = "1";
         if (bar[0] >= '1') { bar[0] = '0'; }
