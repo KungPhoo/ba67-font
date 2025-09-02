@@ -6,6 +6,9 @@ characters from [Char8.js](https://www.masswerk.at/char8/),
 and lots of hand-drawn emojis. It should support
 all existing Unicode characters (as of 2025-08).
 
+It's very crisp at font sizes multiples of 6 pt
+(6,12,18,24,...)
+
 Here's an example what it might look like:
 ![image](example.png)
 
