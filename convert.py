@@ -14,11 +14,14 @@ fontforge.setPrefs("PreferPotrace", True)
 # Auto-trace each glyph
 for g in font.glyphs():
     print(g.glyphname)
+    # the glyphname is U+xxx
+    g.unicode = int(g.glyphname[2:], 16)
     g.autoTrace()
 
 # Save as TTF
 font.generate("./BA67.ttf")
 font.generate("./BA67.woff2")
+
 
 ##########################################
 # Now the square font
@@ -37,6 +40,8 @@ fontforge.setPrefs("PreferPotrace", True)
 # Auto-trace each glyph
 for g in font.glyphs():
     print(g.glyphname)
+    # the glyphname is U+xxx
+    g.unicode = int(g.glyphname[2:], 16)
     g.autoTrace()
 
 # Save as TTF
