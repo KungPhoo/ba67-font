@@ -12,9 +12,25 @@ It's very crisp at font sizes multiples of 6 pt
 Here's an example what it might look like:
 ![image](example.png)
 
+## Background
+BA67 was started with the vision of the C64
+having full Unicode support. As the project
+evolved, all Unicode characters were added
+and most of them were hand-crafted pixel-by-pixel.
+So, having this done, why not use this data
+to generate a true type font for daily
+coding work?
+
 ## Edit
 In order to edit the font, best use the html editor
 at [Github](https://github.com/KungPhoo/8x8-pixel-font-editor).
+
+It's even hosted online:
+[Editor](https://www.ba67.org/fonteditor/8x8-font-editor.html)
+If you want to join editing this font, you can do so.
+Your changes are stored locally in your browser.
+Just send me a copy of the created C++ code for the
+characters you edited via email.
 
 You can find the bytes.txt in this directory,
 copy and paste it into the editor and edit the latest
@@ -27,7 +43,7 @@ The squared version needs size 6 or 12.
 Some glyphs had been changed from the original
 Commodore version:
 - m: The lowercase 'M' in 8 pixels is hard. It
-  was changes to look a bit better besides an
+  was changed to look a bit better besides an
   'n'.
 - l: Lowercase L to better distinguish from '1'.
   It matches 't'.
@@ -35,9 +51,9 @@ Commodore version:
 - '~' was thickened to match the double-pixel style.
 - Apostrophe was straightened to match the quotation
   mark to distinguish from accents. ' ´ `
-- b,d,f,h,i,j,k,l,t tough the top,
+- b,d,f,h,i,j,k,l,t touch the top,
   as uppercase letters do.
-- right-aligned pound sign as M and W do.
+- right-aligned the pound sign as M and W do.
 
 ## Test
 Take a look at this text with BA67 loaded:
@@ -66,7 +82,6 @@ OÖöo UÜüu AÄäa bßB
 9q
 3B8
 ?ZzSs
-
 C(<  c<>)
 
 C++ example:
