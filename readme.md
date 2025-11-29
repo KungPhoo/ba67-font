@@ -54,6 +54,7 @@ Commodore version:
 - b,d,f,h,i,j,k,l,t touch the top,
   as uppercase letters do.
 - right-aligned the pound sign as M and W do.
+- j moved to the left, so it looks like i and l.
 
 ## Test
 Take a look at this text with BA67 loaded:
@@ -71,6 +72,18 @@ Emoji: 🌴 ♥ 🔒 🐴 🕊
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 abcdefghijklmnopqrstuvwxyz
 <>(){}[] ""''´´``
+
+Horizontal alignment:
+( )
+[ ]
+{ }
+: ;
+! ,
+| |
+i I
+j J
+l L
+k K
 
 p  <- these two should touch. 
 L     Your editor might add a one pixel line.
@@ -141,7 +154,7 @@ font.generate("./BA67.woff2")
 PETSCII characters should be mapped
 to the following Unicode code points:
 
-### Unshifted
+### UNSHIFTED
 ```
     00 = U+00000000 undefined
     01 = U+00000001 undefined
@@ -415,7 +428,7 @@ to the following Unicode code points:
     FE = U+00002598 black small square upper left
     FF = U+000003C0 greek small letter pi
 ```
-### Shifted
+### SHIFTED
 ```
     00 = U+00000000 UNDEFINED
     01 = U+00000001 UNDEFINED
